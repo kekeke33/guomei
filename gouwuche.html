@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车_国美</title>
+    <link rel="stylesheet" href="css/gouwuche.css">
+    <script src="js/jquery1.11.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <!-- gome-top 头部第一行 -->
+
+    <!--国美会员 -->
+    <!-- <div class="vip">
+                <a href="" class="huiyuan">国美会员</a>
+                <i class="vip-i"></i> -->
+    <!-- 国美会员划过显示的div -->
+    <!-- <div class="hua-vip">
+                    <div class="shang">
+                        <i></i>
+                        <p>欢迎来到国美，
+                            <a href="denglu.html">请登录！</a>
+                        </p>
+                    </div>
+                    <div class="fengexian"></div>
+                    <div class="zhong ">
+                        <p>我的特权</p>
+                        <a href="">会员俱乐部</a>
+                    </div>
+                    <div class="xia ">
+                        <i></i>
+                        <i><span>美豆抽奖</span></i>
+                        <i><span>退换货保证</span></i>
+                        <i><span>价格保护</span></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div> -->
+
+    <!-- 登录 -->
+    <!-- <div class="denglu">
+                <a href="denglu.html">登录</a>
+            </div> -->
+    <!-- 注册有礼 -->
+    <!-- <div class="zhuce">
+                <a href="zhuce.html">注册有礼</a>
+                <i></i>
+            </div> -->
+
+    <!-- 头部第一行右边的导航 -->
+    <!-- <ul>
+                <li><a href=" ">我的订单</a></li>
+                <li>
+                    <a href=" " class="liA">我的国美</a>
+                    <i></i>
+                    <!-- 划过我的国美 -->
+    <!-- <div class="hua-li1">
+                        <div class="yidiv">
+                            <p>
+                                我的国美，
+                                <a href="denglu.html" class="oA">请登录！</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="">待处理订单</a></li>
+                                <li>
+                                    <a href="">我的收藏</a></li>
+                                <li>
+                                    <a href="">个人资料</a></li>
+                                <li>
+                                    <a href="">我的美店</a></li>
+                            </ul>
+                        </div>
+                        <div class="erdiv">
+                            <a href="">我的优惠券</a>
+                        </div>
+                        <div class="sandiv">
+                            <div>
+                                <a href="">足迹</a>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href=" ">企业采购</a>
+                    <i></i> -->
+    <!-- 划过企业采购 -->
+    <!-- <div class="hua-li3"></div>
+                </li>
+                <li>
+                    <i></i>
+                    <a href=" " class="fuwu">服务中心</a>
+                    <i></i> -->
+    <!-- 划过服务中心 -->
+    <!-- <div class="hua-li4">
+                        <div>
+                            <p><a href="">用户服务</a></p>
+                            <span><a href="">售后服务</a></span>
+                            <span><a href="">帮助服务</a></span>
+                            <span><a href="">新手指南</a></span>
+                            <span><a href="">客服服务</a></span>
+                            <span><a href="">用户注销</a></span>
+                        </div>
+                        <div>
+                            <p><a href="">商家服务</a></p>
+                            <span><a href="">招商合作</a></span>
+                            <span><a href="">商家登录</a></span>
+                            <span><a href="">广告平台</a></span>
+                            <span><a href="">平台规则</a></span>
+                            <span><a href="">商家培训</a></span>
+                        </div>
+                        <input type="button" value="在线客服">
+                    </div>
+                </li>
+                <li>
+                    <a href=" " class="wangzhan">网站导航</a>
+                    <i></i>  -->
+    <!-- 划过网站导航 -->
+    <!-- <div class="hua-li5">
+                        <div>
+                            <p>主题促销</p>
+                            <ul>
+                                <li><a href="">真划算</a> </li>
+                                <li><a href="">抢购</a></li>
+                                <li><a href="">美佳之选</a> </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">家电城</a> </li>
+                                <li><a href=""> 服饰城</a></li>
+                                <li><a href="">国美超市</a>
+                                </li>
+                                <li><a href=""> 品牌街</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">智能</a> </li>
+                                <li><a href="">今日特卖</a> </li>
+                                <li><a href="">新品抢先</a> </li>
+                                <li><a href="">家具家装</a> </li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>主题促销</p>
+                            <ul>
+                                <li><a href="">真划算</a> </li>
+                                <li><a href="">抢购</a></li>
+                                <li><a href="">美佳之选</a> </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">家电城</a> </li>
+                                <li><a href=""> 服饰城</a></li>
+                                <li><a href="">国美超市</a>
+                                </li>
+                                <li><a href=""> 品牌街</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">智能</a> </li>
+                                <li><a href="">今日特卖</a> </li>
+                                <li><a href="">新品抢先</a> </li>
+                                <li><a href="">家具家装</a> </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">智能</a> </li>
+                                <li><a href="">今日特卖</a> </li>
+                                <li><a href="">新品抢先</a> </li>
+                                <li><a href="">家具家装</a> </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">智能</a> </li>
+                                <li><a href="">今日特卖</a> </li>
+                                <li><a href="">新品抢先</a> </li>
+                                <li><a href="">家具家装</a> </li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>主题促销</p>
+                            <ul>
+                                <li><a href="">真划算</a> </li>
+                                <li><a href="">抢购</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">家电城</a> </li>
+                                <li><a href=""> 服饰城</a></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>主题促销</p>
+                            <ul>
+                                <li><a href="">真划算</a> </li>
+                                <li><a href="">抢购</a></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div>
+                            <p>主题促销</p>
+                            <ul>
+                                <li><a href="">真划算</a> </li>
+                                <li><a href="">抢购</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i></i>
+                    <a href=" ">手机国美</a>
+                    <i></i> -->
+    <!-- 划过手机国美
+            <div class="hua-li6">
+                <a href=""></a>
+            </div>
+            </li>
+            </ul>
+        </div>
+
+    </div> -->
+    <!-- 头部第二行 -->
+    <div id="er">
+        <div></div>
+    </div>
+    <!-- 商品信息 -->
+    <div id="head">
+        <input type="checkbox" id="checkAll">
+        <p>全选</p>
+        <p>商品信息</p>
+        <p>单价</p>
+        <p>数量</p>
+        <p>小计</p>
+        <p>操作</p>
+    </div>
+    <!-- 购物车传递过来的信息 -->
+    <ul id="xiangxi">
+        <!-- <li data-id="${data[i].id}">
+            <input type="checkbox" class="ck">
+            <img src="${data[i].imgUrl}">
+            <span>${data[i].title}</span>
+            <span class="perPrice">${data[i].price}</span>
+            <span class="minus">-</span>
+            <input type="text" value="${data[i].num}" class="num">
+            <span class="plus">+</span>
+            <span class="perTotalPrice">${parseInt(data[i].price)*data[i].num}</span><span>元</span>
+            <span class="del">x</span>
+        </li> -->
+    </ul>
+
+    <!-- di -->
+    <div id="di">
+        <div>
+
+        </div>
+    </div>
+</body>
+<script src="js/gouwuche.js"></script>
+
+</html>

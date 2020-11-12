@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国美超市-欢迎登录</title>
+    <link rel="stylesheet" href="css/denglu.css">
+</head>
+
+<body>
+    <!-- 头部登录 -->
+
+    <div id="tou">
+        <img src="images/denglulogo.png" alt="">
+    </div>
+
+    <div id="denglu">
+        <div class="main">
+            <p>
+                依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版《国美平台隐私政策》已上线，将更有利于保护您的个人隐私。
+            </p>
+            <div class="zhanghu">
+                <h3>账户登录</h3>
+                <input type="text" placeholder="手机号/用户名/邮箱/门店会员卡" id="username">
+                <input type="password" placeholder="密码" id="password">
+                <input type="checkbox">
+                <span>自动登录</span>
+                <a href="">忘记密码</a>
+                <div></div>
+                <a href="zhuce.html">免费注册</a>
+                <input type="button" value="登录" id="btn">
+                <a href="">
+                    手机号快速登录（支持门店预留手机）
+                </a>
+                <div>
+                    <a href="">门店会员卡登录</a>
+                    <span></span>
+                    <a href="">微信</a>
+                    <span></span>
+                    <a href="">QQ</a>
+                    <span></span>
+                    <a href="">微信</a>
+                    <span></span>
+                    <a href="">微博</a>
+                    <span></span>
+                    <a href="">美付宝</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="di">
+        <img src="images/dengludibu.png" alt="">
+    </div>
+    <script src="js/jquery1.11.js"></script>
+    <script>
+        $("#btn").click(function() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+
+            $.get("http://jx.xuzhixiang.top/ap/api/login.php", {
+                username: username,
+                password: password
+            }).then(foo => {
+                if (foo.code == 1) {
+                    window.location.href = "index.html"
+                } else {
+                    alert("用户名/密码错误");
+                }
+
+            });
+
+        })
+    </script>
+</body>
+
+</html>
